@@ -59,7 +59,7 @@ DCG 一開始的 β 約 0.018，幾乎不改動特徵，訓練時才慢慢學會
 
 ### 1. 安裝
 
-測試環境：Python 3.7、PyTorch 1.13.1 + CUDA 11.7、一張 RTX 4090（24 GB）。
+測試環境：Python 3.7、PyTorch 1.13.1 + CUDA 11.7、RTX 4090（24 GB）。
 
 ```bash
 conda create -n rgbt-hmr python=3.7 -y && conda activate rgbt-hmr
@@ -160,11 +160,6 @@ scripts/              一鍵訓練 / 評估
 ```
 
 程式裡的名字和論文不同：ARG 是 `per_token_conf_mlp`，MA 是 `body_adapters`，DCG 是 `xmodal_deep_adapters`。
-
-## 已知限制
-
-- LLVIP 沒有官方的 validation split，訓練時用 test set 挑 `checkpoint_best.pt`。
-- 3D-MPJPE 很依賴 root 的定義：以雙髖中點和以腳踝為 root，數字會差到約兩倍，比較時要注意。
 
 ## 致謝
 
