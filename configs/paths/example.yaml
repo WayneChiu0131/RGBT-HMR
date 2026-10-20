@@ -1,0 +1,24 @@
+# Template for configs/paths/local.yaml. Copy it and fill in the absolute paths:
+#   cp configs/paths/example.yaml configs/paths/local.yaml
+#   DATASET_ROOTS : datasets (read by training / evaluation / demos via config.py)
+#   PATHS         : files inside this repo (relative to the repo root, leave as is)
+#   EXTERNAL      : third-party repo / weights, only needed to regenerate the pGT
+
+DATASET_ROOTS:
+  LLVIP_ROOT: /absolute/path/to/LLVIP                    # contains infrared/, visible/, annotations/
+  LLVIP_VISIBLE_ROOT: /absolute/path/to/LLVIP/visible
+  OTP2_DATASET_ROOT: /absolute/path/to/otp2_dataset
+  OTP2_ROOT: /absolute/path/to/otp2_dataset/train
+
+PATHS:
+  DATASET_NPZ_PATH: data/dataset_extras
+  PASCAL_OCCLUDERS: data/dataset_extras/pascal_occluders.pkl
+  SMPLIFY_PRIOR_DIR: data
+  JOINT_REGRESSOR_TRAIN_EXTRA: data/J_regressor_extra.npy
+  JOINT_REGRESSOR_H36M: data/J_regressor_h36m.npy
+  SMPL_MEAN_PARAMS: data/smpl_mean_params.npz
+  SMPL_MODEL_DIR: data/smpl
+
+EXTERNAL:
+  CAMERAHMR_ROOT: /absolute/path/to/CameraHMR
+  CAMERAHMR_CHECKPOINT: /absolute/path/to/CameraHMR/scripts/data/pretrained-models/camerahmr_checkpoint_cleaned.ckpt

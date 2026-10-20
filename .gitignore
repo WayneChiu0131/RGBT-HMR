@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Run outputs
+logs/
+eval_results/
+demo_output/
+
+# Large binaries: kept in the working tree, distributed separately
+weights/
+data/smpl/
+data/dataset_extras/
+
+# Editor / tooling
+.claude/
+.vscode/
+.idea/
+*.swp
+.env
+configs/paths/local.yaml
