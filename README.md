@@ -1,6 +1,6 @@
 # Reliability-Guided RGB–紅外線融合人體網格重建（HMR_mu_final）
 
-以**凍結的 HMR2.0** 為基礎，從 RGB 影像、熱紅外線（IR）影像，或兩者配對輸入，重建 SMPL 人體網格（姿態 + 體型）。
+從 RGB 影像、熱紅外線（IR）影像，或兩者配對輸入，重建 SMPL 人體網格（姿態 + 體型）。
 只訓練三個輕量模組，共 **5.67M 參數**；HMR2.0 的 ViT-H backbone 與 SMPL head（670M 參數）完全不動。
 
 ## 方法
