@@ -159,8 +159,6 @@ tools/                評估、demo、權重匯出、pGT 生成
 scripts/              一鍵訓練 / 評估
 ```
 
-程式裡的名字和論文不同：ARG 是 `per_token_conf_mlp`，MA 是 `body_adapters`，DCG 是 `xmodal_deep_adapters`。
-
 ## 致謝
 
 本專案建立在 [SPIN](https://github.com/nkolot/SPIN) 和 [4D-Humans](https://github.com/shubham-goel/4D-Humans) 之上，
